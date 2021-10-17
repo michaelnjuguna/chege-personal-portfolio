@@ -1,0 +1,251 @@
+.header {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 6rem;
+
+    .header-main {
+        width: 100%;
+        color: $lighttextcolor;
+        text-align: center;
+
+        .greetings {
+            padding: 1rem 0;
+            font-size: 1.6rem;
+            font-family: $headerfont;
+            word-spacing: .5rem;
+
+            h1 {
+                i {
+                    padding: .5rem;
+                    color: $ligthCTAcolor !important;
+                    animation: iconWave;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    animation-delay: .3s;
+                    animation-timing-function: cubic-bezier(0.37, 0.32, 1, 1);
+                }
+            }
+        }
+
+        .intro {
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            font-family: $headerfont;
+            /*This part is important for centering*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .typewriter {
+                color: $ligthCTAcolor;
+                border-right: 3px solid $ligthCTAcolor;
+                margin: 1rem auto;
+                animation: typing 5s steps(23, end), blink .5s step-end infinite alternate;
+                font-family: monospace;
+            }
+        }
+    }
+}
+
+//header break
+.header-break {
+    margin: .5rem 0;
+    padding: .5rem 0;
+    background-color: $darkbodybackgd;
+    color: $darktextcolor;
+
+    &__main {
+        width: 80%;
+        margin: 0 auto;
+        font-family: $headerfont;
+        letter-spacing: .3rem;
+        text-align: center;
+
+        .break-content {
+            padding: 1rem;
+        }
+    }
+}
+
+//profile
+.profile {
+    position: relative;
+
+    .profile-main {
+        width: 80%;
+        margin: 0 auto;
+
+        .profile-header {
+            text-align: center;
+            font-size: 2rem;
+            font-family: $headerfont;
+            padding: .5rem 0;
+            letter-spacing: .2rem;
+        }
+
+        .profile-info {
+            font-size: 1.4rem;
+            font-family: $paragraphfont;
+            text-align: left;
+        }
+
+        .profile-intro {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width:480px) {
+                flex-direction: column;
+            }
+
+            .intro-img {
+                text-align: center;
+                position: relative;
+
+                .pic {
+                    max-width: 80%;
+                    max-height: 80%;
+                    border-left: solid 10px $ligthCTAcolor;
+                    border-bottom: solid 10px $ligthCTAcolor;
+                }
+
+                .experience {
+                    position: absolute;
+                    bottom: 10rem;
+                    left: 10rem;
+                    font-family: $headerfont;
+                    font-family: 1.6rem;
+                    font-weight: bolder;
+
+                    @media (max-width:768px) {
+                        bottom: 5rem;
+                        left: 5rem;
+                    }
+
+                    @media (max-width:480px) {
+                        bottom: 1rem;
+                        left: 2rem;
+                    }
+
+                    .num {
+                        font-family: $headerfont;
+                        font-size: 6rem;
+                        color: $ligthCTAcolor;
+                        font-weight: 900;
+
+                        @media (max-width:480px) {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+
+
+            }
+
+            .intro-info {
+                .intro-name {
+                    font-family: $headerfont;
+                    text-align: center;
+                    font-size: 2rem;
+                    padding: .5rem 0;
+                    margin: 10% 0;
+                }
+
+                .intro-sec__name {
+                    font-family: $headerfont;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    padding: .5rem 0;
+                    margin: 10% 0;
+                }
+            }
+        }
+    }
+}
+
+.featured {
+    width: 100vw;
+    background-color: $darkbodybackgd;
+    color: $darktextcolor;
+
+    .featured-main {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        h5 {
+            font-family: $headerfont;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-family: $paragraphfont;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+//contact
+.contact {
+    .contact-main {
+        width: 80%;
+        margin: 0 auto;
+        .contact-header{
+            font-family: $headerfont;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: .5rem 0;
+        }
+        strong{
+            font-size: 1.4rem;
+            text-align: center;
+            font-family: $headerfont;
+            display: block;
+        }
+        p{
+            font-size: 1.2rem;
+            font-family: $paragraphfont;
+            padding: 1rem 0;
+        }
+        a{
+            text-align: center;
+            display: block;
+        }
+    }
+}
+//footer
+.footer{
+    width: 100vw;
+    background-color: $darkbodybackgd;
+    color: $darktextcolor;
+    .footer-main{
+        width: 80%;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            font-family: $signaturefont;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: .5rem;
+            padding: .5rem 0;
+        }
+        .footer-links{
+            text-align: center;
+            a{
+                color: $darktextcolor;
+                font-size: 1rem;
+                padding: .5rem;
+               
+            }
+           
+        }
+        .copyright{
+            text-align: center;
+        }
+        .top-helper{
+            color: $darkCTAcolor;
+            font-size: 3rem;
+            text-align: center;
+            display: block;
+        }
+    }
+}

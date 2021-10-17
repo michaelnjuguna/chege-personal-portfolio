@@ -1,0 +1,48 @@
+//backgdcolorfor body
+.light-body {
+    background-color: $ligthbodybackgd;
+}
+
+//navigation bar
+.light-navbar {
+    background: rgb(245, 247, 250);
+    background: linear-gradient(184deg, rgba(245, 247, 250, .5) 50%, rgba(230, 233, 237, .5) 100%);
+    color: $lighttextcolor;
+    .logo {
+        color: $lighttextcolor;
+    }
+    .light-nav__social-links {
+        border-left: solid 2px $lighttextcolor;
+        .social-tags {
+            color: blue;
+        }
+    }
+}
+
+.light-hamburger {
+    background-color: $ligthbodybackgd;
+}
+
+.light-mobile__nav {
+    background: rgb(245, 247, 250);
+    background: linear-gradient(184deg, rgba(245, 247, 250, .5) 50%, rgba(230, 233, 237, .5) 100%);
+}
+
+.light-ham {
+    background-color: $lighttextcolor;
+}
+
+.light-index__cta {
+    background-color: $ligthbodybackgd;
+    color: $lighttextcolor;
+    border: 2px $ligthCTAcolor solid;
+    &:hover{
+        color: $ligthbodybackgd;
+        background-color: $lighttextcolor;
+        border: none;
+    }
+}
+
+.light-text{
+    color: $lighttextcolor;
+}

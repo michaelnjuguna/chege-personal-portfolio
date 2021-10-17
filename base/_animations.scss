@@ -1,0 +1,57 @@
+//logo animation
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(1.2rem);
+        opacity: 1;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+//hamburger animation
+@keyframes hamburgerMoveIn {
+    0% {
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translate(-11rem);
+    }
+    100% {
+        transform: translate(-10rem);
+    }
+}
+
+//icon animation
+@keyframes iconWave {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+//typing effect
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}

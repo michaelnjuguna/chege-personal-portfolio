@@ -1,0 +1,75 @@
+//backgd color for body
+.dark-body {
+    background-color: $darkbodybackgd !important;
+}
+
+//navigation bar
+.dark-navbar {
+    background: rgb(101, 109, 120);
+    background: radial-gradient(circle, rgba(101, 109, 120, .5) 22%, rgba(67, 74, 84, .5) 100%) !important;
+    color: $darktextcolor;
+    .logo {
+        color: $darktextcolor !important;
+    }
+    .dark-theme__btn {
+        background-color: $lighttextcolor !important;
+        color: $darktextcolor !important;
+    }
+    .dark-nav__social-links {
+        border-left: solid 2px $darktextcolor !important;
+    }
+}
+
+.dark-nav__btn {
+    background: rgb(245, 247, 250);
+    background: linear-gradient(184deg, rgba(245, 247, 250, 1) 50%, rgba(230, 233, 237, 1) 100%) !important;
+    transform: skew(-30deg);
+    .dark-nav__btn:hover,
+    .dark-nav__btn::after {
+        background: rgb(101, 109, 120);
+        background: linear-gradient(184deg, rgba(101, 109, 120, 1) 50%, rgba(67, 74, 84, 1) 100%);
+        transform: skew(-20deg);
+    }
+}
+
+.dark-hamburger {
+    background-color: $darkbodybackgd !important;
+}
+
+.dark-ham {
+    background-color: $darktextcolor !important;
+}
+
+.dark-mobile__brand {
+    color: $darktextcolor !important;
+}
+
+.dark-signature {
+    color: $darktextcolor;
+}
+
+.dark-main {
+    color: $darktextcolor !important;
+}
+
+.icon1-dark {
+    color: rgba(255, 255, 255, 0.548) !important;
+}
+
+.dark-backdrop {
+    background-color: $darkbodybackgd !important;
+}
+
+.dark-index__cta {
+    background-color: $darkbodybackgd !important;
+    color: $darktextcolor !important;
+    border: 2px $darkCTAcolor solid;
+    &:hover{
+        color: $darkbodybackgd !important;
+        background-color: $darktextcolor !important;
+        border: none;
+    }
+}
+.dark-text{
+    color: $darktextcolor !important;
+}

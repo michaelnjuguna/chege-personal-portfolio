@@ -1,0 +1,22 @@
+*,
+:hover,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}

@@ -1,0 +1,250 @@
+.navigation-bar {
+    width: 90%;
+    margin: 0 5%;
+    padding: .5rem 0;
+    position: fixed;
+    border: none;
+    z-index: 10;
+    @media (max-width: 480px) {
+        display: none;
+    }
+    .main-navbar {
+        width: 90%;
+        margin: 0 10%;
+        padding: .3rem 0;
+        display: flex;
+        .logo {
+            display: inline-block;
+            text-align: center;
+            font-family: $logofont;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            font-weight: bolder;
+            animation: logoAnimation 500ms cubic-bezier(0, 0, 1, 0.32) .5s;
+            @media (max-width: 840px) {
+                font-size: 1rem;
+                letter-spacing: normal;
+            }
+            .user {
+                font-family: $signaturefont;
+                font-weight: bold;
+                font-size: 1.8rem;
+                @media (max-width: 840px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .nav-items {
+            list-style: none;
+            display: inline-block;
+            align-items: center;
+            margin: 1rem auto;
+            animation: logoAnimation 500ms cubic-bezier(0, 0, 1, 0.32) .5s;
+            .nav-item {
+                display: inline-block;
+            }
+            .nav-btn {
+                font-size: .8rem;
+                padding: .5rem;
+                margin: 0 1rem;
+                transform: skew(-30deg);
+                border: solid $lighttextcolor 1px;
+                background: rgb(101, 109, 120);
+                background: linear-gradient(184deg, rgba(101, 109, 120, 1) 50%, rgba(67, 74, 84, 1) 100%);
+                color: $darktextcolor;
+                transition-property: all;
+                transition-delay: .1s;
+                transition-duration: .3s;
+                transition-timing-function: cubic-bezier(0, 0, 1, 0.32);
+                @media (max-width: 840px) {
+                    margin: 0 .5rem;
+                }
+            }
+            .nav-btn:hover,
+            .nav-btn::after {
+                transform: skew(-20deg);
+                background: rgb(245, 247, 250);
+                background: linear-gradient(184deg, rgba(245, 247, 250, 1) 50%, rgba(230, 233, 237, 1) 100%);
+                color: $lighttextcolor;
+            }
+            .light-theme__btn {
+                border: none;
+                margin: 0 .5rem;
+                @media (max-width: 840px) {
+                    margin: 0 .2rem;
+                }
+            }
+            .theme {
+                border: none;
+                padding: 0 .5rem;
+            }
+            .nav-social__links {
+                text-align: center;
+                border-radius: 2px;
+                a {
+                    margin: 0 .5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//mobile navigation bar
+.hamburger {
+    position: fixed;
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    right: .2rem;
+    z-index: 15;
+    border: none;
+    transition: all;
+    transition-delay: .1s;
+    transition-duration: .5s;
+    @media (min-width: 480px) {
+        display: none;
+    }
+    .ham {
+        z-index: 20;
+        width: 2rem;
+        height: 2px;
+        border-radius: 8px;
+        margin: 6px 5px;
+        border: none;
+    }
+    .ham1 {
+        height: 3px;
+        border-radius: 10px;
+        transition: all;
+        transition-duration: .1s;
+        transition-delay: 0ms;
+    }
+    .ham2 {
+        height: 3px;
+        border-radius: 10px;
+    }
+}
+
+.ham-open {
+    transform: rotate(-45deg)translateY(-.5rem);
+    transform-origin: center;
+    width: 1.8rem;
+}
+
+.hamburger-open {
+    transform: translateX(-20rem);
+    @media (max-width: 404px) {
+        transform: translate(-18.5rem);
+    }
+    @media (max-width: 370px) {
+        transform: translate(-15.5rem);
+    }
+}
+
+.mobile-nav {
+    width: 80%;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    transition-property: all;
+    transition-delay: .2s;
+    transition-duration: .5s;
+    @media (min-width: 480px) {
+        display: none !important;
+    }
+    //logo
+    .mobile-brand {
+        text-align: center;
+        font-family: $logofont;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        font-weight: bolder;
+        animation: logoAnimation 500ms cubic-bezier(0, 0, 1, 0.32) .5s;
+        .mobile-user {
+            font-family: $signaturefont;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.mobile-social__links {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    .mobile-social__tags {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}
+
+.mobile-nav__items {
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    .mobile-nav__btn {
+        font-size: .8rem;
+        padding: .5rem;
+        margin: 1rem 0;
+        transform: skew(-30deg);
+        border: solid $lighttextcolor 1px;
+        background: rgb(101, 109, 120);
+        background: linear-gradient(184deg, rgba(101, 109, 120, 1) 50%, rgba(67, 74, 84, 1) 100%);
+        color: $darktextcolor;
+        transition-property: all;
+        transition-delay: .1s;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0, 0, 1, 0.32);
+    }
+}
+
+.mobile-theme {
+    border: none;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.my-signature {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 1rem;
+    p {
+        font-size: .5rem;
+        letter-spacing: .3rem;
+        a {
+            font-size: .5rem;
+        }
+    }
+}
+
+//backdrop
+.backdrop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: $ligthbodybackgd;
+    @media (max-width: 480px) {
+        display: none ;
+    }
+}
+
+.display {
+    display: block;
+}
